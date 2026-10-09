@@ -1,54 +1,77 @@
-# বাজার দর (BazarDor)
+# 🛒 বাজার দর | BazarDor
 
-**বাজার দর (BazarDor)** হলো একটি responsive বাংলা ওয়েব অ্যাপ, যেখানে বাংলাদেশের নিত্যপ্রয়োজনীয় পণ্যের সম্ভাব্য দাম দেখা এবং বিভিন্ন বাজারের দামের তুলনা করা যায়।
+### A Smarter Way to Compare Daily Grocery Prices
 
-## Technologies Used
+**BazarDor** is a grocery price comparison platform designed to help users explore everyday essential products, compare prices across different markets, and make informed shopping decisions. It provides a simple and user-friendly interface for finding products and checking market prices.
 
-- Next.js App Router
-- React (JavaScript / JSX)
-- CSS for responsive styling
-- Better Auth for authentication and profile updates
-- SQLite (`better-sqlite3`) for local authentication data
-- REST API for product and category data
-- Lucide React icons
-- React Hot Toast notifications
+## ✨ Key Features
 
-## 5 Key Features
+1. **🛍️ Product Browsing** — Explore a variety of everyday grocery products with their prices and details.
+2. **📂 Category Filtering** — Browse products by categories such as rice, lentils, oil, vegetables, fish, meat, eggs, and spices.
+3. **💰 Market Price Comparison** — Compare product prices across different markets to find suitable shopping options.
+4. **↕️ Smart Sorting** — Sort products by default order, price from low to high, or price from high to low.
+5. **👤 User Authentication & Profile Management** — Sign in to your account, view your profile, and update your personal information.
 
-1. **বাংলা ও responsive interface:** মোবাইল, ট্যাবলেট ও ডেস্কটপে ব্যবহারযোগ্য নেভিগেশন, হিরো সেকশন এবং তারিখ প্রদর্শন।
-2. **পণ্য ও ক্যাটাগরি ব্রাউজিং:** চাল, ডাল, তেল, সবজি, মাছ, মাংসসহ বিভিন্ন ক্যাটাগরির পণ্য দেখা।
-3. **বাজারভিত্তিক দাম তুলনা:** পণ্যের বিস্তারিত পেজে বিভিন্ন বাজারের দাম এবং সর্বনিম্ন/সর্বোচ্চ দামের তথ্য।
-4. **দাম অনুযায়ী sorting:** ডিফল্ট, দাম কম থেকে বেশি এবং দাম বেশি থেকে কম; বাংলা অঙ্ক থাকলেও সংখ্যামূল্য অনুযায়ী সাজানো হয়।
-5. **Authentication ও profile management:** Better Auth দিয়ে sign up/sign in, protected profile এবং আলাদা route থেকে নাম আপডেট।
+## 🛠️ Technologies Used
 
-## API
+* **Next.js** — React framework with App Router
+* **React** — Building interactive user interfaces
+* **JavaScript (ES6+)** — Application logic and functionality
+* **Tailwind CSS** — Responsive and modern UI styling
+* **Better Auth** — Authentication and user account management
+* **REST API** — Fetching product, category, and market price data
+* **Git & GitHub** — Version control and project hosting
 
-- Primary: `https://api.api-store.workers.dev/api/bazardor`
-- Alternative: `https://api.abcz.workers.dev/api/bazardor`
+## 🚀 Getting Started
 
-API দুটোই unavailable হলে local sample data ব্যবহার করা হয়। Sample data live market data নয়।
+### Prerequisites
 
-## Local Setup
+Make sure you have the following installed:
 
-1. Node.js LTS ইনস্টল করুন (Node.js 22.5+ recommended)।
-2. Dependencies ইনস্টল করুন:
+* Node.js
+* npm
+* Git
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone YOUR_GITHUB_REPOSITORY_URL
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd bd_signin
+   ```
+
+3. Install dependencies:
 
    ```bash
    npm install
    ```
 
-3. `.env.example` থেকে `.env` তৈরি করে `BETTER_AUTH_SECRET` এবং `BETTER_AUTH_URL` সেট করুন।
-4. Development server চালান:
+4. Configure the required environment variables in a `.env` file according to your authentication and API configuration.
+
+5. Start the development server:
 
    ```bash
    npm run dev
    ```
 
-5. `http://localhost:3000` খুলুন।
+6. Open http://localhost:3000 in your browser.
 
-Google/GitHub sign-in ব্যবহার করতে চাইলে `.env`-এ সংশ্লিষ্ট OAuth credentials সেট করতে হবে। Local SQLite database ব্যবহার করায় deployment-এর ক্ষেত্রে persistent storage নিশ্চিত করুন।
+## 🎯 Project Goal
 
-## Submission Links
+The goal of BazarDor is to make everyday grocery shopping more convenient by helping users discover products and compare market prices through a simple digital platform.
 
-- Live Link: _deployment-এর পর যোগ করুন_
-- GitHub Repository: _repository push করার পর যোগ করুন_
+## 👩‍💻 Project Information
+
+**Project Name:** বাজার দর (BazarDor)
+**Project Type:** Grocery Price Comparison Web Application
+**Primary Language:** JavaScript
+
+---
+
+*BazarDor — Compare prices. Shop smarter.*
